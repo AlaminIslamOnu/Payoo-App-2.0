@@ -10,8 +10,43 @@
     <!-- tailwind cdn -->
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
 </head>
-<body>
-    
+<body class="bg-slate-400 ">
+    <section class="bg-[#d4bf68] max-w-md mx-auto  min-h-screen">
+        <nav class="flex justify-center items-center ">
+            <div class="flex justify-center items-center w-9/12  ">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Upay_logo.svg" alt="">
+                
+            </div>
+        </nav>
+        <div class="hero bg-base-200 ">
+            
+              
+              <div class="  w-full bg-amber-300   shadow-2xl">
+                <form class="card-body">
+                  <div class="form-control">
+                    <label class="label">
+                      <span class="label-text">Mobile Number</span>
+                    </label>
+                    <input id="mobile-number" value="01747190824" type="number" placeholder="Enter mobile number" class="input input-bordered" required />
+                  </div>
+                  <div class="form-control">
+                    <label class="label">
+                      <span class="label-text">Enter Pin</span>
+                    </label>
+                    <input id="pin" type="password" placeholder="4 Digit pin" class="input input-bordered" required />
+                    <label class="label">
+                      <a href="#" class="label-text-alt link link-hover">Forgot password?</a>
+                    </label>
+                  </div>
+                  <div class="form-control mt-6">
+                    <button id="login-btn" class="btn btn-primary">Login</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+       
+    </section>
     
 
 
@@ -22,5 +57,6 @@
 
 
 <script src="script/login.js"></script>   
+<script src="script/utilities.js"></script>   
 </body>
 </html>
