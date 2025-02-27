@@ -11,8 +11,6 @@ document.getElementById('cashout-box').addEventListener('click',function(event){
     hide ('getbonus','none')
     hide ('paybill','none')
     hide ("cashout", "block")
-
-
 })
 document.getElementById('addmoney-box').addEventListener('click',function(event){ 
     event.preventDefault()
