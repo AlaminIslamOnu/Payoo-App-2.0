@@ -3,3 +3,8 @@ function inputToNumber (id){
  let xyz= parseFloat (x);
  return xyz;
 }
+
+
+function hide (id,display){
+document.getElementById (id).style.display = display;
+}
