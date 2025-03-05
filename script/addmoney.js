@@ -1,19 +1,20 @@
-document.getElementById('login-btn').addEventListener('click',function(event){ 
+ document.getElementById('addmoney-btn').addEventListener('click',function(event){ 
     event.preventDefault()
     const accountNumber=document.getElementById('main-account-number').value;
     console.log(typeof accountNumber);
+   
+    let amount = document.getElementById('amount2').value;
+     let fixamount= parseInt(amount);
+     let pin= document.getElementById ('your-secret').value; 
+   let fixpin = parseInt(pin);
+    console.log(typeof fixpin); 
+  let fixedmainBalance = document.getElementById("main-balance").innerText;
+    let fixmainBalance =parseFloat(fixedmainBalance);
     
-    let amount = inputToNumber ('amount')
-    let pin= document.getElementById ('your-secret').value;
-    /* let pin = inputToNumber ('your secret')
-    console.log(typeof pin); */
-    
-    let fixmainBalance =inputToNumber('main-balance')
-    
-    if (accountNumber.length === '11'){
-        if (pin === '1234'){
-           let sum=amount + fixmainBalance;
-           document.getElementById('main-balance').innerText =sum;
+    if (accountNumber.length === 11){
+        if (fixpin === 1234){
+           let sum=  fixmainBalance+ fixamount;
+           document.getElementById('main-balance').innerText =sum; 
 
         }
         else{
@@ -22,8 +23,36 @@ document.getElementById('login-btn').addEventListener('click',function(event){
    }
    else {
       alert("Invalid Number")
-   }
-
+   } 
 
    
-})
+}) 
+ document.getElementById('withdrawmoney-btn').addEventListener('click',function(event){ 
+    event.preventDefault()
+    const accountNumber=document.getElementById('main-account-number').value;
+    console.log(typeof accountNumber);
+   
+    let amount = document.getElementById('amount2').value;
+     let fixamount= parseInt(amount);
+     let pin= document.getElementById ('your-secret').value; 
+   let fixpin = parseInt(pin);
+    console.log(typeof fixpin); 
+  let fixedmainBalance = document.getElementById("main-balance").innerText;
+    let fixmainBalance =parseFloat(fixedmainBalance);
+    
+    if (accountNumber.length === 11){
+        if (fixpin === 1234){
+           let sum=  fixmainBalance - fixamount;
+           document.getElementById('main-balance').innerText =sum; 
+
+        }
+        else{
+          alert("Invalid pin")
+        }
+   }
+   else {
+      alert("Invalid Number")
+   } 
+
+   
+}) 

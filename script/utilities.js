@@ -1,6 +1,6 @@
 function inputToNumber (id){
- let x= document.getElementById(id);
- let xyz= parseFloat (x);
+ let x= document.getElementById(id).value;
+ let xyz= parseInt(x);
  return xyz;
 }
 
